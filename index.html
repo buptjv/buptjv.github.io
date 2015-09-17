@@ -1,27 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<!-- saved from url=(0024)http://buptjv.github.io/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
-<title>Laughter</title>
-
-</head>
-<body>
-  <style>
-  @media only screen and (max-width:640px),only screen and (max-device-width:640px){
-    p {
+<style>
+  .clearfix:after {
+    clear:both;
+    content:"1";
+    height:0px;
+    display:block;
+  }
+  
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    position:relative;
+  }
+  .content {
       font-family:sans-serif;
-      color:red;
+      background-color:red;
+      position:relative;
+     
+   }
+  .aside {
+      position:relative;
+      font-family:sans-serif;
+      background-color:green;
+  }
+  
+  header {
+    background-color:black;
+    height:50px;
+    width:80%;
+    margin: 0 auto;
+    position:relative;
+  }
+  
+  footer {
+    background-color:blue;
+    height:50px;
+    width:80%;
+    margin: 0 auto;
+    position:relative;
+  }
+  
+  @media  screen and (max-width:640px), screen and (max-device-width:640px){
+    .content {
+      width:80%;
+      height:30px;
+    }
+    .aside {
+      width:80%;
+      height:30px;
     }
   }
-  @media only screen and (min-device-width:641px) and (min-width:641px) and (max-device-width:1024px) and (max-width:1024px){
-    p {
-      font-family:sans-serif;
-      color:blue;
+  
+  @media  screen and (min-device-width:641px),  screen and (min-width:641px),  screen and (max-device-width:1024px), screen and (max-width:1024px){
+    .content {
+      float:left;
+      width:40%;
+      height:60px;
+    }
+    .aside {
+      float:left;
+      width:40%;
+      height:60px;
     }
   }
 </style>
-<p>hello world! hahahha!</p>
-</body>
-</html>
+<title>Laughter</title>
+
+
+<body>
+
+<header>
+   A
+</header>
+<div class="container clearfix">
+  <div class="content">
+    B
+  </div>
+  <div class="aside">
+    S
+  </div>
+</div>
+
+<footer>
+  C
+</footer>
+
+
+</body></html>
