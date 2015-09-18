@@ -3,6 +3,7 @@
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel='stylesheet' type="text/css" href="css/style.css" />
 <title>Laughter</title>
 
@@ -10,8 +11,9 @@
 <body>
 
 <header>
-   <script>document.write( screen.width);</script>
+  <div id="widthArea"></div>
 </header>
+
 <div class="container clearfix">
   <div class="content">
     B
@@ -24,6 +26,14 @@
 <footer>
   C
 </footer>
-
-
+<script src="js/jquery.1.11.1.min.js" type="text/javascript"></script>
+<script>
+  $(document).ready(function(){
+  var f =function() {
+    $('#widthArea').text(screen.width + ' ' + window.innerWidth);
+  };
+    $(window).resize(f);
+    f();
+  });
+</script>
 </body></html>

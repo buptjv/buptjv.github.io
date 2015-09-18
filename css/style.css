@@ -46,18 +46,18 @@
     position:relative;
   }
   
-  @media  screen and (max-width:640px), screen and (max-device-width:640px){
+  @media  screen and (max-width: 640px), screen and (max-device-width: 640px){
     .content {
       width: 100%;
-      height:30px;
+      /* height:30px; */
     }
     .aside {
       width: 100%;
-      height:30px;
+      /* height:30px; */
     }
   }
   
-  @media  screen and (max-width: 1440px) and (min-width: 641px){
+  @media screen and (max-width: 1440px) and (min-width: 641px){
     .content {
       float:left;
       width: 60%;
